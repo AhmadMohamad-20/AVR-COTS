@@ -1,0 +1,14 @@
+/*
+ * main.c
+ *
+ *  Created on: 8 Dec 2023
+ *      Author: user
+ */
+
+#include "DIO_Interface.h"
+int main(void)
+{
+uint8 retVal = DIO_setPinDirection(0,0,1);
+retVal =DIO_setPinValue(0,0,1);
+}
+

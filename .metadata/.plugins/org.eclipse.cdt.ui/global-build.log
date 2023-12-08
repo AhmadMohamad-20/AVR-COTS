@@ -1,0 +1,1120 @@
+16:34:03 **** Build of configuration Debug for project DIO ****
+make all 
+'Building file: ../DIO_Program.c'
+'Invoking: AVR Compiler'
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"DIO_Program.d" -MT"DIO_Program.o" -c -o "DIO_Program.o" "../DIO_Program.c"
+../DIO_Program.c: In function 'DIO_setPinDirection':
+../DIO_Program.c:55: error: label at end of compound statement
+make: *** [DIO_Program.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+16:35:25 **** Incremental Build of configuration Debug for project DIO ****
+make all 
+'Building file: ../DIO_Program.c'
+'Invoking: AVR Compiler'
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"DIO_Program.d" -MT"DIO_Program.o" -c -o "DIO_Program.o" "../DIO_Program.c"
+'Finished building: ../DIO_Program.c'
+' '
+'Building file: ../main.c'
+'Invoking: AVR Compiler'
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+'Finished building: ../main.c'
+' '
+'Building target: DIO.elf'
+'Invoking: AVR C Linker'
+avr-gcc -Wl,-Map,DIO.map -mmcu=atmega32 -o "DIO.elf"  ./DIO_Program.o ./main.o   
+'Finished building target: DIO.elf'
+' '
+'Invoking: AVR Create Extended Listing'
+avr-objdump -h -S DIO.elf  >"DIO.lss"
+'Finished building: DIO.lss'
+' '
+'Create Flash image (ihex format)'
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex DIO.elf  "DIO.hex"
+'Finished building: DIO.hex'
+' '
+'Invoking: Print Size'
+avr-size --format=avr --mcu=atmega32 DIO.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:     650 bytes (2.0% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+'Finished building: sizedummy'
+' '
+16:47:06 **** Incremental Build of configuration Debug for project DIO ****
+make all 
+'Invoking: Print Size'
+avr-size --format=avr --mcu=atmega32 DIO.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:     650 bytes (2.0% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+'Finished building: sizedummy'
+' '
+16:47:06 **** Incremental Build of configuration Debug for project DIO ****
+make all 
+'Invoking: Print Size'
+avr-size --format=avr --mcu=atmega32 DIO.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:     650 bytes (2.0% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+'Finished building: sizedummy'
+' '
+16:47:10 **** Incremental Build of configuration Debug for project DIO ****
+make all 
+'Invoking: Print Size'
+avr-size --format=avr --mcu=atmega32 DIO.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:     650 bytes (2.0% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+'Finished building: sizedummy'
+' '
+17:01:39 **** Incremental Build of configuration Debug for project DIO ****
+make all 
+'Building file: ../DIO_Program.c'
+'Invoking: AVR Compiler'
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"DIO_Program.d" -MT"DIO_Program.o" -c -o "DIO_Program.o" "../DIO_Program.c"
+'Finished building: ../DIO_Program.c'
+' '
+'Building file: ../main.c'
+'Invoking: AVR Compiler'
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:8:
+../DIO_Interface.h:43: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'DIO_setPinDirection'
+../DIO_Interface.h:44: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'DIO_setPinValue'
+../main.c: In function 'main':
+../main.c:11: warning: implicit declaration of function 'DIO_setPinDirection'
+make: *** [main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+17:02:42 **** Incremental Build of configuration Debug for project DIO ****
+make all 
+'Building file: ../main.c'
+'Invoking: AVR Compiler'
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:8:
+../DIO_Interface.h:43: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'DIO_setPinDirection'
+../DIO_Interface.h:44: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'DIO_setPinValue'
+../main.c: In function 'main':
+../main.c:11: error: 'uint8' undeclared (first use in this function)
+../main.c:11: error: (Each undeclared identifier is reported only once
+../main.c:11: error: for each function it appears in.)
+../main.c:11: error: expected ';' before 'retVal'
+../main.c:12: error: 'retVal' undeclared (first use in this function)
+../main.c:12: warning: implicit declaration of function 'DIO_setPinValue'
+make: *** [main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+17:02:46 **** Incremental Build of configuration Debug for project DIO ****
+make all 
+'Building file: ../main.c'
+'Invoking: AVR Compiler'
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:8:
+../DIO_Interface.h:43: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'DIO_setPinDirection'
+../DIO_Interface.h:44: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'DIO_setPinValue'
+../main.c: In function 'main':
+../main.c:11: error: 'uint8' undeclared (first use in this function)
+../main.c:11: error: (Each undeclared identifier is reported only once
+../main.c:11: error: for each function it appears in.)
+../main.c:11: error: expected ';' before 'retVal'
+../main.c:12: error: 'retVal' undeclared (first use in this function)
+../main.c:12: warning: implicit declaration of function 'DIO_setPinValue'
+make: *** [main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+17:02:47 **** Incremental Build of configuration Debug for project DIO ****
+make all 
+'Building file: ../main.c'
+'Invoking: AVR Compiler'
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:8:
+../DIO_Interface.h:43: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'DIO_setPinDirection'
+../DIO_Interface.h:44: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'DIO_setPinValue'
+../main.c: In function 'main':
+../main.c:11: error: 'uint8' undeclared (first use in this function)
+../main.c:11: error: (Each undeclared identifier is reported only once
+../main.c:11: error: for each function it appears in.)
+../main.c:11: error: expected ';' before 'retVal'
+../main.c:12: error: 'retVal' undeclared (first use in this function)
+../main.c:12: warning: implicit declaration of function 'DIO_setPinValue'
+make: *** [main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+17:03:07 **** Incremental Build of configuration Debug for project DIO ****
+make all 
+'Building file: ../main.c'
+'Invoking: AVR Compiler'
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:8:
+../DIO_Interface.h:43: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'DIO_setPinDirection'
+../DIO_Interface.h:44: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'DIO_setPinValue'
+../main.c: In function 'main':
+../main.c:11: error: 'uint8' undeclared (first use in this function)
+../main.c:11: error: (Each undeclared identifier is reported only once
+../main.c:11: error: for each function it appears in.)
+../main.c:11: error: expected ';' before 'retVal'
+../main.c:12: error: 'retVal' undeclared (first use in this function)
+../main.c:12: warning: implicit declaration of function 'DIO_setPinValue'
+make: *** [main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+17:03:08 **** Incremental Build of configuration Debug for project DIO ****
+make all 
+'Building file: ../main.c'
+'Invoking: AVR Compiler'
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:8:
+../DIO_Interface.h:43: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'DIO_setPinDirection'
+../DIO_Interface.h:44: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'DIO_setPinValue'
+../main.c: In function 'main':
+../main.c:11: error: 'uint8' undeclared (first use in this function)
+../main.c:11: error: (Each undeclared identifier is reported only once
+../main.c:11: error: for each function it appears in.)
+../main.c:11: error: expected ';' before 'retVal'
+../main.c:12: error: 'retVal' undeclared (first use in this function)
+../main.c:12: warning: implicit declaration of function 'DIO_setPinValue'
+make: *** [main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+17:03:40 **** Incremental Build of configuration Debug for project DIO ****
+make all 
+'Building file: ../main.c'
+'Invoking: AVR Compiler'
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:8:
+../DIO_Interface.h:43: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'DIO_setPinDirection'
+../DIO_Interface.h:44: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'DIO_setPinValue'
+../main.c: In function 'main':
+../main.c:11: error: 'uint8' undeclared (first use in this function)
+../main.c:11: error: (Each undeclared identifier is reported only once
+../main.c:11: error: for each function it appears in.)
+../main.c:11: error: expected ';' before 'retVal'
+../main.c:12: error: 'retVal' undeclared (first use in this function)
+../main.c:12: warning: implicit declaration of function 'DIO_setPinValue'
+make: *** [main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+17:03:50 **** Incremental Build of configuration Debug for project DIO ****
+make all 
+'Building file: ../main.c'
+'Invoking: AVR Compiler'
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:8:
+../DIO_Interface.h:43: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'DIO_setPinDirection'
+../DIO_Interface.h:44: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'DIO_setPinValue'
+../main.c: In function 'main':
+../main.c:11: error: 'uint8' undeclared (first use in this function)
+../main.c:11: error: (Each undeclared identifier is reported only once
+../main.c:11: error: for each function it appears in.)
+../main.c:11: error: expected ';' before 'retVal'
+make: *** [main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+17:03:54 **** Incremental Build of configuration Debug for project DIO ****
+make all 
+'Building file: ../main.c'
+'Invoking: AVR Compiler'
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:8:
+../DIO_Interface.h:43: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'DIO_setPinDirection'
+../DIO_Interface.h:44: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'DIO_setPinValue'
+../main.c: In function 'main':
+../main.c:11: error: 'uint8' undeclared (first use in this function)
+../main.c:11: error: (Each undeclared identifier is reported only once
+../main.c:11: error: for each function it appears in.)
+../main.c:11: error: expected ';' before 'retVal'
+make: *** [main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+17:03:55 **** Incremental Build of configuration Debug for project DIO ****
+make all 
+'Building file: ../main.c'
+'Invoking: AVR Compiler'
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:8:
+../DIO_Interface.h:43: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'DIO_setPinDirection'
+../DIO_Interface.h:44: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'DIO_setPinValue'
+../main.c: In function 'main':
+../main.c:11: error: 'uint8' undeclared (first use in this function)
+../main.c:11: error: (Each undeclared identifier is reported only once
+../main.c:11: error: for each function it appears in.)
+../main.c:11: error: expected ';' before 'retVal'
+make: *** [main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+17:04:13 **** Incremental Build of configuration Debug for project DIO ****
+make all 
+'Building file: ../main.c'
+'Invoking: AVR Compiler'
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:8:
+../DIO_Interface.h:43: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'DIO_setPinDirection'
+../DIO_Interface.h:44: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'DIO_setPinValue'
+../main.c: In function 'main':
+../main.c:11: error: 'uint8' undeclared (first use in this function)
+../main.c:11: error: (Each undeclared identifier is reported only once
+../main.c:11: error: for each function it appears in.)
+../main.c:11: error: expected ';' before 'retVal'
+make: *** [main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+17:04:15 **** Incremental Build of configuration Debug for project DIO ****
+make all 
+'Building file: ../main.c'
+'Invoking: AVR Compiler'
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:8:
+../DIO_Interface.h:43: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'DIO_setPinDirection'
+../DIO_Interface.h:44: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'DIO_setPinValue'
+../main.c: In function 'main':
+../main.c:11: error: 'uint8' undeclared (first use in this function)
+../main.c:11: error: (Each undeclared identifier is reported only once
+../main.c:11: error: for each function it appears in.)
+../main.c:11: error: expected ';' before 'retVal'
+make: *** [main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+17:09:44 **** Incremental Build of configuration Debug for project DIO ****
+make all 
+'Building file: ../main.c'
+'Invoking: AVR Compiler'
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:8:
+../DIO_Interface.h:43: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'DIO_setPinDirection'
+../DIO_Interface.h:44: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'DIO_setPinValue'
+../main.c: In function 'main':
+../main.c:11: error: 'uint8' undeclared (first use in this function)
+../main.c:11: error: (Each undeclared identifier is reported only once
+../main.c:11: error: for each function it appears in.)
+../main.c:11: error: expected ';' before 'retVal'
+make: *** [main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+17:09:49 **** Incremental Build of configuration Debug for project DIO ****
+make all 
+'Building file: ../main.c'
+'Invoking: AVR Compiler'
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+'Finished building: ../main.c'
+' '
+'Building target: DIO.elf'
+'Invoking: AVR C Linker'
+avr-gcc -Wl,-Map,DIO.map -mmcu=atmega32 -o "DIO.elf"  ./DIO_Program.o ./main.o   
+'Finished building target: DIO.elf'
+' '
+'Invoking: AVR Create Extended Listing'
+avr-objdump -h -S DIO.elf  >"DIO.lss"
+'Finished building: DIO.lss'
+' '
+'Create Flash image (ihex format)'
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex DIO.elf  "DIO.hex"
+'Finished building: DIO.hex'
+' '
+'Invoking: Print Size'
+avr-size --format=avr --mcu=atmega32 DIO.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    1282 bytes (3.9% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+'Finished building: sizedummy'
+' '
+17:11:05 **** Incremental Build of configuration Debug for project DIO ****
+make all 
+'Building file: ../main.c'
+'Invoking: AVR Compiler'
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+'Finished building: ../main.c'
+' '
+'Building target: DIO.elf'
+'Invoking: AVR C Linker'
+avr-gcc -Wl,-Map,DIO.map -mmcu=atmega32 -o "DIO.elf"  ./DIO_Program.o ./main.o   
+'Finished building target: DIO.elf'
+' '
+'Invoking: AVR Create Extended Listing'
+avr-objdump -h -S DIO.elf  >"DIO.lss"
+'Finished building: DIO.lss'
+' '
+'Create Flash image (ihex format)'
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex DIO.elf  "DIO.hex"
+'Finished building: DIO.hex'
+' '
+'Invoking: Print Size'
+avr-size --format=avr --mcu=atmega32 DIO.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    1282 bytes (3.9% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+'Finished building: sizedummy'
+' '
+17:39:08 **** Incremental Build of configuration Debug for project DIO ****
+make all 
+'Invoking: Print Size'
+avr-size --format=avr --mcu=atmega32 DIO.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    1282 bytes (3.9% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+'Finished building: sizedummy'
+' '
+18:14:27 **** Clean-only build of configuration Debug for project DIO ****
+make clean 
+rm -rf  DIO.hex  ./DIO_Program.o ./main.o  sizedummy  DIO.lss  ./DIO_Program.d ./main.d  DIO.elf
+' '
+18:14:28 **** Incremental Build of configuration Debug for project DIO ****
+make all 
+'Building file: ../DIO_Program.c'
+'Invoking: AVR Compiler'
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"DIO_Program.d" -MT"DIO_Program.o" -c -o "DIO_Program.o" "../DIO_Program.c"
+'Finished building: ../DIO_Program.c'
+' '
+'Building file: ../main.c'
+'Invoking: AVR Compiler'
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:11:
+d:/courses/embedded systems/amit/eclipse/winavr-20100110/lib/gcc/../../avr/include/avr/delay.h:36:2: warning: #warning "This file has been moved to <util/delay.h>."
+In file included from d:/courses/embedded systems/amit/eclipse/winavr-20100110/lib/gcc/../../avr/include/avr/delay.h:37,
+                 from ../main.c:11:
+d:/courses/embedded systems/amit/eclipse/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+'Finished building: ../main.c'
+' '
+'Building target: DIO.elf'
+'Invoking: AVR C Linker'
+avr-gcc -Wl,-Map,DIO.map -mmcu=atmega32 -o "DIO.elf"  ./DIO_Program.o ./main.o   
+'Finished building target: DIO.elf'
+' '
+'Invoking: AVR Create Extended Listing'
+avr-objdump -h -S DIO.elf  >"DIO.lss"
+'Finished building: DIO.lss'
+' '
+'Create Flash image (ihex format)'
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex DIO.elf  "DIO.hex"
+'Finished building: DIO.hex'
+' '
+'Invoking: Print Size'
+avr-size --format=avr --mcu=atmega32 DIO.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    4652 bytes (14.2% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+'Finished building: sizedummy'
+' '
+22:49:28 **** Build of configuration Debug for project DIO ****
+make all 
+'Building file: ../DIO_Program.c'
+'Invoking: AVR Compiler'
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"DIO_Program.d" -MT"DIO_Program.o" -c -o "DIO_Program.o" "../DIO_Program.c"
+../DIO_Program.c: In function 'DIO_ReadPinValue':
+../DIO_Program.c:141: warning: assignment makes pointer from integer without a cast
+../DIO_Program.c:144: warning: assignment makes pointer from integer without a cast
+../DIO_Program.c:147: warning: assignment makes pointer from integer without a cast
+../DIO_Program.c:150: warning: assignment makes pointer from integer without a cast
+'Finished building: ../DIO_Program.c'
+' '
+'Building file: ../main.c'
+'Invoking: AVR Compiler'
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+'Finished building: ../main.c'
+' '
+'Building target: DIO.elf'
+'Invoking: AVR C Linker'
+avr-gcc -Wl,-Map,DIO.map -mmcu=atmega32 -o "DIO.elf"  ./DIO_Program.o ./main.o   
+'Finished building target: DIO.elf'
+' '
+'Invoking: AVR Create Extended Listing'
+avr-objdump -h -S DIO.elf  >"DIO.lss"
+'Finished building: DIO.lss'
+' '
+'Create Flash image (ihex format)'
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex DIO.elf  "DIO.hex"
+'Finished building: DIO.hex'
+' '
+'Invoking: Print Size'
+avr-size --format=avr --mcu=atmega32 DIO.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    1584 bytes (4.8% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+'Finished building: sizedummy'
+' '
+22:50:18 **** Incremental Build of configuration Debug for project DIO ****
+make all 
+'Building file: ../main.c'
+'Invoking: AVR Compiler'
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:7:
+d:/courses/embedded systems/amit/eclipse/winavr-20100110/lib/gcc/../../avr/include/avr/delay.h:36:2: warning: #warning "This file has been moved to <util/delay.h>."
+In file included from d:/courses/embedded systems/amit/eclipse/winavr-20100110/lib/gcc/../../avr/include/avr/delay.h:37,
+                 from ../main.c:7:
+d:/courses/embedded systems/amit/eclipse/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+'Finished building: ../main.c'
+' '
+'Building target: DIO.elf'
+'Invoking: AVR C Linker'
+avr-gcc -Wl,-Map,DIO.map -mmcu=atmega32 -o "DIO.elf"  ./DIO_Program.o ./main.o   
+'Finished building target: DIO.elf'
+' '
+'Invoking: AVR Create Extended Listing'
+avr-objdump -h -S DIO.elf  >"DIO.lss"
+'Finished building: DIO.lss'
+' '
+'Create Flash image (ihex format)'
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex DIO.elf  "DIO.hex"
+'Finished building: DIO.hex'
+' '
+'Invoking: Print Size'
+avr-size --format=avr --mcu=atmega32 DIO.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    4704 bytes (14.4% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+'Finished building: sizedummy'
+' '
+22:50:29 **** Incremental Build of configuration Debug for project DIO ****
+make all 
+'Building file: ../main.c'
+'Invoking: AVR Compiler'
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:7:
+d:/courses/embedded systems/amit/eclipse/winavr-20100110/lib/gcc/../../avr/include/avr/delay.h:36:2: warning: #warning "This file has been moved to <util/delay.h>."
+In file included from d:/courses/embedded systems/amit/eclipse/winavr-20100110/lib/gcc/../../avr/include/avr/delay.h:37,
+                 from ../main.c:7:
+d:/courses/embedded systems/amit/eclipse/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+'Finished building: ../main.c'
+' '
+'Building target: DIO.elf'
+'Invoking: AVR C Linker'
+avr-gcc -Wl,-Map,DIO.map -mmcu=atmega32 -o "DIO.elf"  ./DIO_Program.o ./main.o   
+'Finished building target: DIO.elf'
+' '
+'Invoking: AVR Create Extended Listing'
+avr-objdump -h -S DIO.elf  >"DIO.lss"
+'Finished building: DIO.lss'
+' '
+'Create Flash image (ihex format)'
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex DIO.elf  "DIO.hex"
+'Finished building: DIO.hex'
+' '
+'Invoking: Print Size'
+avr-size --format=avr --mcu=atmega32 DIO.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    4932 bytes (15.1% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+'Finished building: sizedummy'
+' '
+23:54:48 **** Incremental Build of configuration Debug for project DIO ****
+make all 
+'Building file: ../DIO_Program.c'
+'Invoking: AVR Compiler'
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"DIO_Program.d" -MT"DIO_Program.o" -c -o "DIO_Program.o" "../DIO_Program.c"
+../DIO_Program.c: In function 'DIO_ReadPinValue':
+../DIO_Program.c:141: warning: assignment makes pointer from integer without a cast
+../DIO_Program.c:144: warning: assignment makes pointer from integer without a cast
+../DIO_Program.c:147: warning: assignment makes pointer from integer without a cast
+../DIO_Program.c:150: warning: assignment makes pointer from integer without a cast
+../DIO_Program.c: At top level:
+../DIO_Program.c:164: error: conflicting types for 'DIO_setPortDirection'
+../DIO_Interface.h:50: error: previous declaration of 'DIO_setPortDirection' was here
+../DIO_Program.c:216: error: conflicting types for 'DIO_setPortValue'
+../DIO_Interface.h:51: error: previous declaration of 'DIO_setPortValue' was here
+../DIO_Program.c:240: error: conflicting types for 'DIO_ReadPortValue'
+../DIO_Interface.h:52: error: previous declaration of 'DIO_ReadPortValue' was here
+../DIO_Program.c: In function 'DIO_ReadPortValue':
+../DIO_Program.c:246: warning: assignment makes pointer from integer without a cast
+../DIO_Program.c:249: warning: assignment makes pointer from integer without a cast
+../DIO_Program.c:252: warning: assignment makes pointer from integer without a cast
+../DIO_Program.c:255: warning: assignment makes pointer from integer without a cast
+make: *** [DIO_Program.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+23:55:22 **** Incremental Build of configuration Debug for project DIO ****
+make all 
+'Building file: ../DIO_Program.c'
+'Invoking: AVR Compiler'
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"DIO_Program.d" -MT"DIO_Program.o" -c -o "DIO_Program.o" "../DIO_Program.c"
+../DIO_Program.c: In function 'DIO_ReadPinValue':
+../DIO_Program.c:141: warning: assignment makes pointer from integer without a cast
+../DIO_Program.c:144: warning: assignment makes pointer from integer without a cast
+../DIO_Program.c:147: warning: assignment makes pointer from integer without a cast
+../DIO_Program.c:150: warning: assignment makes pointer from integer without a cast
+../DIO_Program.c: In function 'DIO_ReadPortValue':
+../DIO_Program.c:246: warning: assignment makes pointer from integer without a cast
+../DIO_Program.c:249: warning: assignment makes pointer from integer without a cast
+../DIO_Program.c:252: warning: assignment makes pointer from integer without a cast
+../DIO_Program.c:255: warning: assignment makes pointer from integer without a cast
+'Finished building: ../DIO_Program.c'
+' '
+'Building file: ../main.c'
+'Invoking: AVR Compiler'
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:7:
+d:/courses/embedded systems/amit/eclipse/winavr-20100110/lib/gcc/../../avr/include/avr/delay.h:36:2: warning: #warning "This file has been moved to <util/delay.h>."
+In file included from d:/courses/embedded systems/amit/eclipse/winavr-20100110/lib/gcc/../../avr/include/avr/delay.h:37,
+                 from ../main.c:7:
+d:/courses/embedded systems/amit/eclipse/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+'Finished building: ../main.c'
+' '
+'Building target: DIO.elf'
+'Invoking: AVR C Linker'
+avr-gcc -Wl,-Map,DIO.map -mmcu=atmega32 -o "DIO.elf"  ./DIO_Program.o ./main.o   
+'Finished building target: DIO.elf'
+' '
+'Invoking: AVR Create Extended Listing'
+avr-objdump -h -S DIO.elf  >"DIO.lss"
+'Finished building: DIO.lss'
+' '
+'Create Flash image (ihex format)'
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex DIO.elf  "DIO.hex"
+'Finished building: DIO.hex'
+' '
+'Invoking: Print Size'
+avr-size --format=avr --mcu=atmega32 DIO.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    5514 bytes (16.8% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+'Finished building: sizedummy'
+' '
+00:00:11 **** Incremental Build of configuration Debug for project DIO ****
+make all 
+'Building file: ../main.c'
+'Invoking: AVR Compiler'
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:7:
+d:/courses/embedded systems/amit/eclipse/winavr-20100110/lib/gcc/../../avr/include/avr/delay.h:36:2: warning: #warning "This file has been moved to <util/delay.h>."
+In file included from d:/courses/embedded systems/amit/eclipse/winavr-20100110/lib/gcc/../../avr/include/avr/delay.h:37,
+                 from ../main.c:7:
+d:/courses/embedded systems/amit/eclipse/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+'Finished building: ../main.c'
+' '
+'Building target: DIO.elf'
+'Invoking: AVR C Linker'
+avr-gcc -Wl,-Map,DIO.map -mmcu=atmega32 -o "DIO.elf"  ./DIO_Program.o ./main.o   
+'Finished building target: DIO.elf'
+' '
+'Invoking: AVR Create Extended Listing'
+avr-objdump -h -S DIO.elf  >"DIO.lss"
+'Finished building: DIO.lss'
+' '
+'Create Flash image (ihex format)'
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex DIO.elf  "DIO.hex"
+'Finished building: DIO.hex'
+' '
+'Invoking: Print Size'
+avr-size --format=avr --mcu=atmega32 DIO.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    5514 bytes (16.8% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+'Finished building: sizedummy'
+' '
+00:01:07 **** Incremental Build of configuration Debug for project DIO ****
+make all 
+'Building file: ../DIO_Program.c'
+'Invoking: AVR Compiler'
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"DIO_Program.d" -MT"DIO_Program.o" -c -o "DIO_Program.o" "../DIO_Program.c"
+../DIO_Program.c: In function 'DIO_ReadPinValue':
+../DIO_Program.c:141: warning: assignment makes pointer from integer without a cast
+../DIO_Program.c:144: warning: assignment makes pointer from integer without a cast
+../DIO_Program.c:147: warning: assignment makes pointer from integer without a cast
+../DIO_Program.c:150: warning: assignment makes pointer from integer without a cast
+../DIO_Program.c: In function 'DIO_ReadPortValue':
+../DIO_Program.c:246: warning: assignment makes pointer from integer without a cast
+../DIO_Program.c:249: warning: assignment makes pointer from integer without a cast
+../DIO_Program.c:252: warning: assignment makes pointer from integer without a cast
+../DIO_Program.c:255: warning: assignment makes pointer from integer without a cast
+'Finished building: ../DIO_Program.c'
+' '
+'Building target: DIO.elf'
+'Invoking: AVR C Linker'
+avr-gcc -Wl,-Map,DIO.map -mmcu=atmega32 -o "DIO.elf"  ./DIO_Program.o ./main.o   
+'Finished building target: DIO.elf'
+' '
+'Invoking: AVR Create Extended Listing'
+avr-objdump -h -S DIO.elf  >"DIO.lss"
+'Finished building: DIO.lss'
+' '
+'Create Flash image (ihex format)'
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex DIO.elf  "DIO.hex"
+'Finished building: DIO.hex'
+' '
+'Invoking: Print Size'
+avr-size --format=avr --mcu=atmega32 DIO.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    5518 bytes (16.8% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+'Finished building: sizedummy'
+' '
+00:03:12 **** Incremental Build of configuration Debug for project DIO ****
+make all 
+'Building file: ../main.c'
+'Invoking: AVR Compiler'
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:7:
+d:/courses/embedded systems/amit/eclipse/winavr-20100110/lib/gcc/../../avr/include/avr/delay.h:36:2: warning: #warning "This file has been moved to <util/delay.h>."
+In file included from d:/courses/embedded systems/amit/eclipse/winavr-20100110/lib/gcc/../../avr/include/avr/delay.h:37,
+                 from ../main.c:7:
+d:/courses/embedded systems/amit/eclipse/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+'Finished building: ../main.c'
+' '
+'Building target: DIO.elf'
+'Invoking: AVR C Linker'
+avr-gcc -Wl,-Map,DIO.map -mmcu=atmega32 -o "DIO.elf"  ./DIO_Program.o ./main.o   
+'Finished building target: DIO.elf'
+' '
+'Invoking: AVR Create Extended Listing'
+avr-objdump -h -S DIO.elf  >"DIO.lss"
+'Finished building: DIO.lss'
+' '
+'Create Flash image (ihex format)'
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex DIO.elf  "DIO.hex"
+'Finished building: DIO.hex'
+' '
+'Invoking: Print Size'
+avr-size --format=avr --mcu=atmega32 DIO.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    5518 bytes (16.8% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+'Finished building: sizedummy'
+' '
+00:09:33 **** Incremental Build of configuration Debug for project DIO ****
+make all 
+'Building file: ../DIO_Program.c'
+'Invoking: AVR Compiler'
+avr-gcc -Wall -g3 -gdwarf-2 -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"DIO_Program.d" -MT"DIO_Program.o" -c -o "DIO_Program.o" "../DIO_Program.c"
+../DIO_Program.c: In function 'DIO_ReadPinValue':
+../DIO_Program.c:141: warning: assignment makes pointer from integer without a cast
+../DIO_Program.c:144: warning: assignment makes pointer from integer without a cast
+../DIO_Program.c:147: warning: assignment makes pointer from integer without a cast
+../DIO_Program.c:150: warning: assignment makes pointer from integer without a cast
+../DIO_Program.c: In function 'DIO_ReadPortValue':
+../DIO_Program.c:246: warning: assignment makes pointer from integer without a cast
+../DIO_Program.c:249: warning: assignment makes pointer from integer without a cast
+../DIO_Program.c:252: warning: assignment makes pointer from integer without a cast
+../DIO_Program.c:255: warning: assignment makes pointer from integer without a cast
+'Finished building: ../DIO_Program.c'
+' '
+'Building file: ../main.c'
+'Invoking: AVR Compiler'
+avr-gcc -Wall -g3 -gdwarf-2 -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:7:
+d:/courses/embedded systems/amit/eclipse/winavr-20100110/lib/gcc/../../avr/include/avr/delay.h:36:2: warning: #warning "This file has been moved to <util/delay.h>."
+In file included from d:/courses/embedded systems/amit/eclipse/winavr-20100110/lib/gcc/../../avr/include/avr/delay.h:37,
+                 from ../main.c:7:
+d:/courses/embedded systems/amit/eclipse/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+'Finished building: ../main.c'
+' '
+'Building target: DIO.elf'
+'Invoking: AVR C Linker'
+avr-gcc -Wl,-Map,DIO.map -mmcu=atmega32 -o "DIO.elf"  ./DIO_Program.o ./main.o   
+'Finished building target: DIO.elf'
+' '
+'Invoking: AVR Create Extended Listing'
+avr-objdump -h -S DIO.elf  >"DIO.lss"
+'Finished building: DIO.lss'
+' '
+'Create Flash image (ihex format)'
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex DIO.elf  "DIO.hex"
+'Finished building: DIO.hex'
+' '
+'Invoking: Print Size'
+avr-size --format=avr --mcu=atmega32 DIO.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    5518 bytes (16.8% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+'Finished building: sizedummy'
+' '
+00:14:39 **** Incremental Build of configuration Debug for project DIO ****
+make all 
+'Building file: ../main.c'
+'Invoking: AVR Compiler'
+avr-gcc -Wall -g3 -gdwarf-2 -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:7:
+d:/courses/embedded systems/amit/eclipse/winavr-20100110/lib/gcc/../../avr/include/avr/delay.h:36:2: warning: #warning "This file has been moved to <util/delay.h>."
+In file included from d:/courses/embedded systems/amit/eclipse/winavr-20100110/lib/gcc/../../avr/include/avr/delay.h:37,
+                 from ../main.c:7:
+d:/courses/embedded systems/amit/eclipse/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+'Finished building: ../main.c'
+' '
+'Building target: DIO.elf'
+'Invoking: AVR C Linker'
+avr-gcc -Wl,-Map,DIO.map -mmcu=atmega32 -o "DIO.elf"  ./DIO_Program.o ./main.o   
+'Finished building target: DIO.elf'
+' '
+'Invoking: AVR Create Extended Listing'
+avr-objdump -h -S DIO.elf  >"DIO.lss"
+'Finished building: DIO.lss'
+' '
+'Create Flash image (ihex format)'
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex DIO.elf  "DIO.hex"
+'Finished building: DIO.hex'
+' '
+'Invoking: Print Size'
+avr-size --format=avr --mcu=atmega32 DIO.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    5518 bytes (16.8% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+'Finished building: sizedummy'
+' '
+00:18:45 **** Incremental Build of configuration Debug for project DIO ****
+make all 
+'Invoking: Print Size'
+avr-size --format=avr --mcu=atmega32 DIO.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    5518 bytes (16.8% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+'Finished building: sizedummy'
+' '
+00:18:58 **** Incremental Build of configuration Debug for project DIO ****
+make all 
+'Invoking: Print Size'
+avr-size --format=avr --mcu=atmega32 DIO.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    5518 bytes (16.8% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+'Finished building: sizedummy'
+' '
+00:19:04 **** Incremental Build of configuration Debug for project DIO ****
+make all 
+'Building file: ../main.c'
+'Invoking: AVR Compiler'
+avr-gcc -Wall -g3 -gdwarf-2 -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:7:
+d:/courses/embedded systems/amit/eclipse/winavr-20100110/lib/gcc/../../avr/include/avr/delay.h:36:2: warning: #warning "This file has been moved to <util/delay.h>."
+In file included from d:/courses/embedded systems/amit/eclipse/winavr-20100110/lib/gcc/../../avr/include/avr/delay.h:37,
+                 from ../main.c:7:
+d:/courses/embedded systems/amit/eclipse/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+'Finished building: ../main.c'
+' '
+'Building target: DIO.elf'
+'Invoking: AVR C Linker'
+avr-gcc -Wl,-Map,DIO.map -mmcu=atmega32 -o "DIO.elf"  ./DIO_Program.o ./main.o   
+'Finished building target: DIO.elf'
+' '
+'Invoking: AVR Create Extended Listing'
+avr-objdump -h -S DIO.elf  >"DIO.lss"
+'Finished building: DIO.lss'
+' '
+'Create Flash image (ihex format)'
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex DIO.elf  "DIO.hex"
+'Finished building: DIO.hex'
+' '
+'Invoking: Print Size'
+avr-size --format=avr --mcu=atmega32 DIO.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    5518 bytes (16.8% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+'Finished building: sizedummy'
+' '
+00:19:43 **** Incremental Build of configuration Debug for project DIO ****
+make all 
+'Invoking: Print Size'
+avr-size --format=avr --mcu=atmega32 DIO.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    5518 bytes (16.8% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+'Finished building: sizedummy'
+' '
+00:19:46 **** Incremental Build of configuration Debug for project DIO ****
+make all 
+'Building file: ../main.c'
+'Invoking: AVR Compiler'
+avr-gcc -Wall -g3 -gdwarf-2 -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:7:
+d:/courses/embedded systems/amit/eclipse/winavr-20100110/lib/gcc/../../avr/include/avr/delay.h:36:2: warning: #warning "This file has been moved to <util/delay.h>."
+In file included from d:/courses/embedded systems/amit/eclipse/winavr-20100110/lib/gcc/../../avr/include/avr/delay.h:37,
+                 from ../main.c:7:
+d:/courses/embedded systems/amit/eclipse/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+'Finished building: ../main.c'
+' '
+'Building target: DIO.elf'
+'Invoking: AVR C Linker'
+avr-gcc -Wl,-Map,DIO.map -mmcu=atmega32 -o "DIO.elf"  ./DIO_Program.o ./main.o   
+'Finished building target: DIO.elf'
+' '
+'Invoking: AVR Create Extended Listing'
+avr-objdump -h -S DIO.elf  >"DIO.lss"
+'Finished building: DIO.lss'
+' '
+'Create Flash image (ihex format)'
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex DIO.elf  "DIO.hex"
+'Finished building: DIO.hex'
+' '
+'Invoking: Print Size'
+avr-size --format=avr --mcu=atmega32 DIO.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    5518 bytes (16.8% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+'Finished building: sizedummy'
+' '
+00:20:19 **** Incremental Build of configuration Debug for project DIO ****
+make all 
+'Building file: ../main.c'
+'Invoking: AVR Compiler'
+avr-gcc -Wall -g3 -gdwarf-2 -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:7:
+d:/courses/embedded systems/amit/eclipse/winavr-20100110/lib/gcc/../../avr/include/avr/delay.h:36:2: warning: #warning "This file has been moved to <util/delay.h>."
+In file included from d:/courses/embedded systems/amit/eclipse/winavr-20100110/lib/gcc/../../avr/include/avr/delay.h:37,
+                 from ../main.c:7:
+d:/courses/embedded systems/amit/eclipse/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+'Finished building: ../main.c'
+' '
+'Building target: DIO.elf'
+'Invoking: AVR C Linker'
+avr-gcc -Wl,-Map,DIO.map -mmcu=atmega32 -o "DIO.elf"  ./DIO_Program.o ./main.o   
+'Finished building target: DIO.elf'
+' '
+'Invoking: AVR Create Extended Listing'
+avr-objdump -h -S DIO.elf  >"DIO.lss"
+'Finished building: DIO.lss'
+' '
+'Create Flash image (ihex format)'
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex DIO.elf  "DIO.hex"
+'Finished building: DIO.hex'
+' '
+'Invoking: Print Size'
+avr-size --format=avr --mcu=atmega32 DIO.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    2140 bytes (6.5% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+'Finished building: sizedummy'
+' '
+00:31:12 **** Incremental Build of configuration Debug for project DIO ****
+make all 
+'Building file: ../main.c'
+'Invoking: AVR Compiler'
+avr-gcc -Wall -g3 -gdwarf-2 -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:7:
+d:/courses/embedded systems/amit/eclipse/winavr-20100110/lib/gcc/../../avr/include/avr/delay.h:36:2: warning: #warning "This file has been moved to <util/delay.h>."
+In file included from d:/courses/embedded systems/amit/eclipse/winavr-20100110/lib/gcc/../../avr/include/avr/delay.h:37,
+                 from ../main.c:7:
+d:/courses/embedded systems/amit/eclipse/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+'Finished building: ../main.c'
+' '
+'Building target: DIO.elf'
+'Invoking: AVR C Linker'
+avr-gcc -Wl,-Map,DIO.map -mmcu=atmega32 -o "DIO.elf"  ./DIO_Program.o ./main.o   
+'Finished building target: DIO.elf'
+' '
+'Invoking: AVR Create Extended Listing'
+avr-objdump -h -S DIO.elf  >"DIO.lss"
+'Finished building: DIO.lss'
+' '
+'Create Flash image (ihex format)'
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex DIO.elf  "DIO.hex"
+'Finished building: DIO.hex'
+' '
+'Invoking: Print Size'
+avr-size --format=avr --mcu=atmega32 DIO.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    5290 bytes (16.1% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+'Finished building: sizedummy'
+' '
+00:32:10 **** Incremental Build of configuration Debug for project DIO ****
+make all 
+'Building file: ../main.c'
+'Invoking: AVR Compiler'
+avr-gcc -Wall -g3 -gdwarf-2 -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:7:
+d:/courses/embedded systems/amit/eclipse/winavr-20100110/lib/gcc/../../avr/include/avr/delay.h:36:2: warning: #warning "This file has been moved to <util/delay.h>."
+In file included from d:/courses/embedded systems/amit/eclipse/winavr-20100110/lib/gcc/../../avr/include/avr/delay.h:37,
+                 from ../main.c:7:
+d:/courses/embedded systems/amit/eclipse/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+'Finished building: ../main.c'
+' '
+'Building target: DIO.elf'
+'Invoking: AVR C Linker'
+avr-gcc -Wl,-Map,DIO.map -mmcu=atmega32 -o "DIO.elf"  ./DIO_Program.o ./main.o   
+'Finished building target: DIO.elf'
+' '
+'Invoking: AVR Create Extended Listing'
+avr-objdump -h -S DIO.elf  >"DIO.lss"
+'Finished building: DIO.lss'
+' '
+'Create Flash image (ihex format)'
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex DIO.elf  "DIO.hex"
+'Finished building: DIO.hex'
+' '
+'Invoking: Print Size'
+avr-size --format=avr --mcu=atmega32 DIO.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    5518 bytes (16.8% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+'Finished building: sizedummy'
+' '

@@ -1,0 +1,19 @@
+/*
+ * DIO_program.c
+ *
+ *  Created on: 8 Dec 2023
+ *      Author: user
+ */
+
+#include "STD_Types.h"
+#include "bitmath.h"
+
+#include "DIO_cfg.h"
+#include "DIO_Private.h"
+#include "DIO_Reg.h"
+#include "DIO_Interface.h"
+
+void DIO_setPinDirection(uint8 copy_DIO_port, uint8 copy_DIO_pin, uint8 copy_DIO_direction)
+{
+
+}

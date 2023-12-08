@@ -1,0 +1,67 @@
+/*
+ * DIO_program.c
+ *
+ *  Created on: 8 Dec 2023
+ *      Author: user
+ */
+
+#include "STD_Types.h"
+#include "bitmath.h"
+
+#include "DIO_cfg.h"
+#include "DIO_Private.h"
+#include "DIO_Reg.h"
+#include "DIO_Interface.h"
+
+void DIO_setPinDirection(uint8 copy_DIO_port, uint8 copy_DIO_pin, uint8 copy_DIO_direction)
+{
+	if (copy_DIO_pin <= PIN7)
+	{
+		if (copy_DIO_direction == OUTPUT)
+		{
+			switch (copy_DIO_port)
+			{
+				case DIO_PORTA:
+					SET_BIT(DDRA,copy_DIO_pin);
+					break;
+				case DIO_PORTB:
+					SET_BIT(DDRB,copy_DIO_pin);
+					break;
+				case DIO_PORTC:
+					SET_BIT(DDRC,copy_DIO_pin);
+					break;
+				case DIO_PORTD:
+					SET_BIT(DDRD,copy_DIO_pin);
+					break;
+				default:;
+			}
+		}
+		else if (copy_DIO_direction == INPUT)
+		{
+			switch (copy_DIO_port)
+			{
+				case DIO_PORTA:
+					CLEAR_BIT(DDRA,copy_DIO_pin);
+					break;
+				case DIO_PORTB:
+					CLEAR_BIT(DDRB,copy_DIO_pin);
+					break;
+				case DIO_PORTC:
+					CLEAR_BIT(DDRC,copy_DIO_pin);
+					break;
+				case DIO_PORTD:
+					CLEAR_BIT(DDRD,copy_DIO_pin);
+					break;
+				default:;
+			}
+		}
+		else
+		{
+			return;
+		}
+	}
+	else
+	{
+		return;
+	}
+}

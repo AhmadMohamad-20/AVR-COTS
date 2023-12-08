@@ -1,0 +1,13 @@
+/*
+ * main.c
+ *
+ *  Created on: 8 Dec 2023
+ *      Author: user
+ */
+
+#include "DIO_Interface.h"
+int main(void)
+{
+DIO_setPinDirection(0,0,1);
+}
+

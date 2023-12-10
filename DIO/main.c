@@ -4,27 +4,38 @@
  *  Created on: 8 Dec 2023
  *      Author: user
  */
-#include <avr/delay.h>
+#include <util/delay.h>
+
 #include "STD_Types.h"
 #include "bitmath.h"
 #include "DIO_Interface.h"
+#include "main.h"
 
+uint8 data = 0x00;
 int main(void)
 {
 	DIO_setPinDirection(DIO_PORTD,PIN3,OUTPUT);
 	DIO_setPinDirection(DIO_PORTC,PIN2,OUTPUT);
 	DIO_setPinDirection(DIO_PORTC,PIN7,OUTPUT);
-
+	DIO_setPinDirection(DIO_PORTB,PIN0,INPUT);
+	DIO_setPinDirection(DIO_PORTD,PIN2,INPUT);
 	while (1)
 	{
-		DIO_setPinValue(DIO_PORTD,PIN3,HIGH);
-		DIO_setPinValue(DIO_PORTC,PIN2,HIGH);
-		DIO_setPinValue(DIO_PORTC,PIN7,HIGH);
-		_delay_ms(500);
-		DIO_setPinValue(DIO_PORTD,PIN3,LOW);
-		DIO_setPinValue(DIO_PORTC,PIN2,LOW);
-		DIO_setPinValue(DIO_PORTC,PIN7,LOW);
-		_delay_ms(500);
+		DIO_ReadPinValue(DIO_PORTD,PIN2,&data);
+		//_delay_us(50);
+		if (data == HIGH)
+		{
+			DIO_setPinValue(DIO_PORTD,PIN3,HIGH);
+			DIO_setPinValue(DIO_PORTC,PIN2,HIGH);
+			DIO_setPinValue(DIO_PORTC,PIN7,HIGH);
+		}
+		else
+		{
+			DIO_setPinValue(DIO_PORTD,PIN3,LOW);
+			DIO_setPinValue(DIO_PORTC,PIN2,LOW);
+			DIO_setPinValue(DIO_PORTC,PIN7,LOW);
+		}
+
 	}
 
 	return (0);

@@ -1,0 +1,32 @@
+/*
+ * main.c
+ *
+ *  Created on: 8 Dec 2023
+ *      Author: user
+ */
+#include <avr/delay.h>
+#include "STD_Types.h"
+#include "bitmath.h"
+#include "DIO_Interface.h"
+
+
+int main(void)
+{
+	DIO_setPortDirection(DIO_PORTC,OUTPUT);
+	uint8 data = 0x00;
+
+	while (1)
+	{
+		DIO_setPortValue(DIO_PORTC,0xFF);
+		DIO_ReadPortValue(DIO_PORTC,&data);
+		DIO_ReadPortValue(DIO_PORTC,&data);
+		_delay_ms(500);
+		DIO_setPortValue(DIO_PORTC,0x00);
+		DIO_ReadPortValue(DIO_PORTC,&data);
+		DIO_ReadPortValue(DIO_PORTC,&data);
+		_delay_ms(500);
+	}
+
+	return (0);
+}
+

@@ -1,0 +1,19 @@
+/*
+ * main.c
+ *
+ *  Created on: 8 Dec 2023
+ *      Author: user
+ */
+#include <avr/delay.h>
+#include "STD_Types.h"
+#include "bitmath.h"
+#include "DIO_Interface.h"
+
+uint8 data = 0x00;
+int main(void)
+{
+
+
+	return (0);
+}
+

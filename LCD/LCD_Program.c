@@ -5,9 +5,9 @@
  *      Author: user
  */
 #include <util/delay.h>
-#include "DIO/STD_Types.h"
-#include "DIO/bitmath.h"
-#include "DIO/DIO_Interface.h"
+#include "../DIO/STD_Types.h"
+#include "../DIO/bitmath.h"
+#include "../DIO/DIO_Interface.h"
 
 #include "LCD_cfg.h"
 #include "LCD_Reg.h"
@@ -43,7 +43,13 @@ uint8 LCD_sendData_8bit(uint8 copy_LCD_port, uint8 copy_LCD_data)
 uint8 LCD_init_8bit(void)
 {
 	uint8 local_errorSignal = OK_STAT;
-	_delay_ms(35);
+
+	local_errorSignal = DIO_setPortDirection(LCD_DATA_PORT,PORT_OUTPUT);
+	local_errorSignal = DIO_setPortValue(LCD_DATA_PORT,PORT_LOW);
+	local_errorSignal = DIO_setPinDirection(LCD_CONTROL_PORT,LCD_RS_PIN,OUTPUT);
+	local_errorSignal = DIO_setPinDirection(LCD_CONTROL_PORT,LCD_RW_PIN,OUTPUT);
+	local_errorSignal = DIO_setPinDirection(LCD_CONTROL_PORT,LCD_ENABLE_PIN,OUTPUT);
+	_delay_ms(30);
 	local_errorSignal = LCD_sendCommand_8bit(LCD_DATA_PORT,FUNCTION_SET);
 	local_errorSignal = LCD_sendCommand_8bit(LCD_DATA_PORT,DISPLAY_CURSOR_BLINKING);
 	local_errorSignal = LCD_sendCommand_8bit(LCD_DATA_PORT,DISPLAY_CLEAR);

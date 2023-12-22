@@ -1,0 +1,24 @@
+/*
+ * Author   : Ahmed Mohamed Aboud
+ * Linkedin :https://www.linkedin.com/in/ahmed-mohamed-aboud-33b2471b1/
+ * File Name: DIO_INTERRUPT__Interacing.h
+ * Date: 17 Dec 2023
+ */
+
+#ifndef DIO_INTERRUPT__INTERACING_H_
+#define DIO_INTERRUPT__INTERACING_H_
+
+#define INT0_STAT INTERRUPT_ENABLE
+#define INT1_STAT INTERRUPT_DISABLE
+#define INT2_STAT INTERRUPT_DISABLE
+
+
+
+#define INT0_TRIGGRING_METHOD	FALLING_EDGE_TRIGGERING
+#define INT1_TRIGGRING_METHOD	FALLING_EDGE_TRIGGERING
+#define INT2_TRIGGRING_METHOD	FALLING_EDGE_TRIGGERING
+
+void DIO_INTERRUPT_enableINT0();
+void DIO_INTERRUPT_enableINT1();
+void DIO_INTERRUPT_enableINT2();
+#endif /* DIO_INTERRUPT__INTERACING_H_ */

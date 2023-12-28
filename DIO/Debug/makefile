@@ -78,7 +78,7 @@ DIO.hex: DIO.elf makefile objects.mk $(OPTIONAL_TOOL_DEPS)
 
 sizedummy: DIO.elf makefile objects.mk $(OPTIONAL_TOOL_DEPS)
 	@echo 'Invoking: Print Size'
-	-avr-size --format=berkeley -t DIO.elf
+	-avr-size --format=avr --mcu=atmega32 DIO.elf
 	@echo 'Finished building: $@'
 	@echo ' '
 

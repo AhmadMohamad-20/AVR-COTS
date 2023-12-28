@@ -178,7 +178,7 @@ uint8 DIO_setPortDirection(uint8 copy_DIO_port,  uint8 copy_DIO_direction)
 					DDRC = copy_DIO_direction;
 					break;
 				case DIO_PORTD:
-					DDRC = copy_DIO_direction;
+					DDRD = copy_DIO_direction;
 					break;
 				default:
 					local_errorSignal = NOT_OK_STAT;
